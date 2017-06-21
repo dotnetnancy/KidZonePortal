@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{404A9255-7821-4DD0-BDDB-D41A0F86D23F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AccountServiceUnitTests</RootNamespace>
+    <AssemblyName>AccountServiceUnitTests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTestsAccountService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLibrary\CommonLibrary.csproj">
+      <Project>{038809F3-5C83-4185-AE08-79FE2C2F31C2}</Project>
+      <Name>CommonLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KidZonePortalAccountWCF\src\AccountBusinessLayer\AccountBusinessLayer.csproj">
+      <Project>{0FC35463-1FC1-4BDD-BB41-3B6F804471F8}</Project>
+      <Name>AccountBusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KidZonePortalAccountWCF\src\AccountDataLayer\AccountDataLayer.csproj">
+      <Project>{D073B7A9-E3ED-4BB5-B1AE-01A8CAC0DA8F}</Project>
+      <Name>AccountDataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KidZonePortalAccountWCF\src\AccountService\AccountService.csproj">
+      <Project>{5C34D63F-5D55-47A2-8A19-3EC1E56028B6}</Project>
+      <Name>AccountService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KidZonePortalAccountWCF\src\ProfileBusinessLayer\ProfileBusinessLayer.csproj">
+      <Project>{CEE934F2-85C4-41B8-AC50-274296AA8880}</Project>
+      <Name>ProfileBusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KidZonePortalAccountWCF\src\ProfileDataLayer\ProfileDataLayer.csproj">
+      <Project>{6F1FB019-ED41-4A34-95F0-65DBC67B99CE}</Project>
+      <Name>ProfileDataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KidZonePortalAccountWCF\src\RegistrationBusinessLibrary\RegistrationBusinessLibrary.csproj">
+      <Project>{6C04960B-41FA-4FC6-B3B3-FB37B0BCD38C}</Project>
+      <Name>RegistrationBusinessLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KidZonePortalAccountWCF\src\RegistrationDataLayer\RegistrationDataLayer.csproj">
+      <Project>{F3284C75-F207-4B14-9CA2-7E02CCDFB4A8}</Project>
+      <Name>RegistrationDataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KidZonePortalAccountWCF\src\RegistrationService\RegistrationService.csproj">
+      <Project>{5A618E8C-7155-4BE3-8F35-B55BF1DFCBB7}</Project>
+      <Name>RegistrationService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

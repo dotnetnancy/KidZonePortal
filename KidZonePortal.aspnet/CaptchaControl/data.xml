@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <category name="who" value="Who is This Famous Person (Last Name if not Single Word Name)?">
+    <subCategory name="pop" value="pop.jpg">
+    <question name="pop_1" value="Bono"></question>
+      <question name="pop_2" value="Bieber"></question>
+      <question name="pop_3" value="Timberlake"></question>
+      <question name="pop_4" value="Jackson"></question>
+      <answer name="pop_answer" value="pop_4"></answer>
+  </subCategory>
+  </category>
+  <category name="what" value="What is this a picture of?">
+    <subCategory name="fruit" value="fruit.jpg">
+      <question name="fruit_1" value="Orange"></question>
+      <question name="fruit_2" value="Strawberry"></question>
+      <question name="fruit_3" value="Pear"></question>
+      <question name="fruit_4" value="Grape"></question>
+      <answer name="fruit_answer" value="fruit_2"></answer>
+    </subCategory>
+  </category>
+  <category name="where" value="What City is This?">
+    <subCategory name="dream" value="dream.jpg">
+      <question name="city_1" value="Seattle"></question>
+      <question name="city_2" value="Denver"></question>
+      <question name="city_3" value="Houston"></question>
+      <question name="city_4" value="San Diego"></question>
+      <answer name="city_answer" value="city_1"></answer>
+    </subCategory>
+  </category>
+</data>
